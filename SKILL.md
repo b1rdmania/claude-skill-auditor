@@ -133,13 +133,13 @@ Render directly as markdown (not inside a code block):
 
 | Dimension | Score | Summary |
 |-----------|-------|---------|
-| 1. Frontmatter Quality | X/10 | ... |
-| 2. Instruction Followability | X/10 | ... |
-| 3. DRY | X/10 | ... |
-| 4. KISS | X/10 | ... |
-| 5. Dead Content | X/10 | ... |
-| 6. Tool & Dependency Risk | X/10 | ... |
-| 7. Structure & Navigation | X/10 | ... |
+| 1. Frontmatter Quality | X/10 | [one-line summary] |
+| 2. Instruction Followability | X/10 | [one-line summary] |
+| 3. DRY | X/10 | [one-line summary] |
+| 4. KISS | X/10 | [one-line summary] |
+| 5. Dead Content | X/10 | [one-line summary] |
+| 6. Tool & Dependency Risk | X/10 | [one-line summary] |
+| 7. Structure & Navigation | X/10 | [one-line summary] |
 
 ### Critical Issues (fix before using)
 [List only issues scoring -2 or worse. Be specific: quote the offending text, explain why it's a problem, give the fix.]
@@ -150,12 +150,9 @@ Render directly as markdown (not inside a code block):
 ### What's Working Well
 [2–3 specific things done right. Not generic praise.]
 
----
-
-## After the Audit
+### Verdict
+- Below 6.0: flag that the skill needs significant work before it will be reliable
+- 6.0–8.0: reliable for most uses, improvements optional
+- Above 8.0: production-ready
 
 Always ask: "Want me to apply the fixes?" If yes, edit the file directly — don't just describe changes.
-
-If the overall score is below 6: flag that the skill needs significant work before it will be reliable.
-If 6–8: reliable for most uses, improvements optional.
-If above 8: production-ready, only apply fixes if the user wants them.
