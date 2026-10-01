@@ -209,10 +209,18 @@ Unknown in score cells where applicable. Label incomplete reviews provisional.
 | 8. Source Integrity & Grounding | X/10 | [one-line summary] |
 
 ### Critical Issues (fix before using)
-[List only issues scoring -2 or worse. Be specific: quote the offending text, explain why it's a problem, give the fix.]
+[List every finding with a deduction of 2 or more points, and every blocker even if
+it has no separate deduction. For each, state the dimension and deduction, quote the
+offending text, explain the problem, and give the fix.]
 
 ### Improvements (nice to have)
-[List minor issues scoring -1. Same format: quote → problem → fix.]
+[List only findings with a 1-point deduction. State the dimension and deduction, then
+quote → problem → fix. Put suggestions with no deduction in a separate unscored note.]
+
+Before returning the report, reconcile each dimension score with its listed deductions
+and check that every finding appears in the correct section exactly once. For example,
+a missing dependency fallback carrying a 2-point deduction belongs in Critical Issues,
+even if the proposed fix is small. Do not change a deduction merely to fit a section.
 
 ### What's Working Well
 [2–3 specific things done right. Not generic praise.]
