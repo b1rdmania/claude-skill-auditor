@@ -8,6 +8,19 @@ A Claude Code skill that audits other Claude Code skills. Give it any `SKILL.md`
 
 ---
 
+## ChatGPT and Codex plugin (preview)
+
+A portable, skills-only version lives in [`plugins/skill-auditor`](plugins/skill-auditor).
+It accepts accessible files, uploads, or pasted skill content and includes eight review
+dimensions, adding Source Integrity & Grounding from the newer installed Claude variant.
+
+The original root `SKILL.md` and the Claude installation command below are unchanged.
+The plugin has deliberate portability and scoring differences: see
+[plugin setup and compatibility notes](docs/plugin.md). Scores from the two variants are
+not directly comparable. The existing seven-dimension description below documents the
+original Claude version; the plugin's score is a static quality assessment, not a
+production-readiness or security guarantee.
+
 ## 🎯 What it does
 
 Scores a skill across **7 dimensions** (0–10 each), identifies critical issues and improvements, and offers to apply fixes directly.

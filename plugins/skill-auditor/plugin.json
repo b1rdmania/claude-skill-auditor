@@ -1,0 +1,19 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "skill-auditor",
+  "version": "0.1.0",
+  "description": "Review agent skills across eight quality dimensions and suggest concrete fixes.",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Skill Auditor",
+        "shortDescription": "Review and improve skills",
+        "longDescription": "Audit SKILL.md files for clarity, followability, unnecessary complexity, dependencies and source grounding. Produces an evidence-based quality report and concrete fixes. Static review does not establish runtime reliability or security.",
+        "defaultPrompt": [
+          "Audit this SKILL.md and suggest concrete fixes.",
+          "Check this skill before I publish it."
+        ]
+      }
+    }
+  }
+}

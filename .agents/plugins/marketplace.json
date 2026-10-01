@@ -1,0 +1,20 @@
+{
+  "name": "birdmania-skill-auditor",
+  "interface": {
+    "displayName": "Birdmania Skill Auditor"
+  },
+  "plugins": [
+    {
+      "name": "skill-auditor",
+      "source": {
+        "source": "local",
+        "path": "./plugins/skill-auditor"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    }
+  ]
+}
